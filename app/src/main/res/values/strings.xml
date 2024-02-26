@@ -1,4 +1,27 @@
 <resources>
     <string name="app_name">Lab1</string>
     <string name="saint_vincent">Saint Vincent</string>
+    <string name="georgia">Georgia</string>
+    <string name="djibouti">Djibouti</string>
+    <string name="jordan">Jordan</string>
+    <string name="african">Central African Republic</string>
+    <string-array name="countries">
+        <item>@string/saint_vincent</item>
+        <item>@string/georgia</item>
+        <item>@string/djibouti</item>
+        <item>@string/jordan</item>
+        <item>@string/african</item>
+    </string-array>
+
+
+    <string name="anthemSaint">Saint Vincent, Land so beautiful,\nWith joyful hearts we pledge to thee\nOur loyalty and love and vow\nTo keep you ever free.</string>
+
+    <string name="anthemGeorgia">Chemi xat’ia samshoblo,\nSaxat’e mteli kveqana,\nGanatebuli mta-bari\nC’ilnaqaria Ghmerttana.</string>
+
+    <string name="anthemDjibouti">Hir cagaarku qariyayiyo\nHabkay samadu tahayoo\nXiddig dhi igleh hoorshoo\nCaddaan lagu hadheeyaay.</string>
+
+    <string name="anthemJordan">Naḥnu ʾaḥraznā l-munā\nYawma ʾaḥyayta lanā\nNahḍatan taḥfizunā\nTatasāmā fawqa hāmi š-šuhubi</string>
+
+    <string name="anthemAfrican">Bêafrîka, mbeso tî âBantu\nKîri mo gbû gîgî tî mo-mvenî\nMo bâa pâsi na gbe tî âzo kûê\nMe fadësô, mo ke na kürü gô</string>
+
 </resources>

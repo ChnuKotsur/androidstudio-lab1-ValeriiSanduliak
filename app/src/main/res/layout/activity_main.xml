@@ -8,7 +8,7 @@
 
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageViewBackround"
         android:layout_width="537dp"
         android:layout_height="783dp"
 
@@ -23,10 +23,10 @@
         android:layout_width="394dp"
         android:layout_height="117dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView">
+        app:layout_constraintTop_toTopOf="@+id/imageViewBackround">
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/imageViewFlag"
             android:layout_width="163dp"
             android:layout_height="110dp"
             app:layout_constraintStart_toStartOf="parent"
@@ -34,7 +34,7 @@
             app:srcCompat="@drawable/saintvincentflag" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/textTop"
             android:layout_width="233dp"
             android:layout_height="113dp"
             android:layout_marginStart="160dp"
@@ -47,16 +47,43 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textViewAnthem"
         android:layout_width="383dp"
         android:layout_height="217dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="448dp"
         android:gravity="center"
-        android:text="Saint Vincent, Land so beautiful,&#xA;With joyful hearts we pledge to thee&#xA;Our loyalty and love and vow&#xA;To keep you ever free."
+        android:text="@string/anthemSaint"
         android:textColor="@android:color/white"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+
+        android:id="@+id/switchCountryButton"
+        android:layout_width="235dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="372dp"
+        android:backgroundTint="#20B2AA"
+        android:text="Switch Country"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="onClickSwitchCountry"
+        />
+
+    <Spinner
+        android:id="@+id/spinnerCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="188dp"
+        android:entries="@array/countries"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
