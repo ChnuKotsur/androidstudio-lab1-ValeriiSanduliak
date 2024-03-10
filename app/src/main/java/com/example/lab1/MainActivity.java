@@ -12,6 +12,8 @@ import android.widget.TextView;
 
 import java.util.Arrays;
 
+import android.content.Intent;
+import android.widget.EditText;
 public class MainActivity extends AppCompatActivity {
 
 
@@ -79,8 +81,22 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void Gymn(String country){
+    public void onSendMessage(View view) {
+        EditText messageView = (EditText) findViewById(R.id.message);
+        String messageText = messageView.getText().toString();
+        Intent intent = new Intent (this, ReceiveMessageActivity.class);
+        intent.putExtra(ReceiveMessageActivity.EXTRA_MESSAGE, messageText);
+        startActivity(intent);
+    }
 
-
+    public void onSendMessageOther(View view){
+        EditText messageView = (EditText)findViewById(R.id.message);
+        String messageText = messageView.getText().toString();
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.setType("text/plain");
+        intent.putExtra(Intent.EXTRA_TEXT, messageText);
+        String chooserTitle = getString(R.string.chooser);
+        Intent chosenIntent = Intent.createChooser(intent, chooserTitle);
+        startActivity(chosenIntent);
     }
 }
