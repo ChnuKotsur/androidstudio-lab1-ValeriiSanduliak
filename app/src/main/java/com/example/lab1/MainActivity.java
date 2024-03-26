@@ -99,4 +99,9 @@ public class MainActivity extends AppCompatActivity {
         Intent chosenIntent = Intent.createChooser(intent, chooserTitle);
         startActivity(chosenIntent);
     }
+    public void onOpenTimer(View view) {
+        Intent intent = new Intent(this, Stopwatch.class);
+        startActivity(intent);
+    }
+
 }

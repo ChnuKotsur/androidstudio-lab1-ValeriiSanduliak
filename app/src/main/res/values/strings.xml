@@ -25,9 +25,13 @@
     <string name="anthemAfrican">Bêafrîka, mbeso tî âBantu\nKîri mo gbû gîgî tî mo-mvenî\nMo bâa pâsi na gbe tî âzo kûê\nMe fadësô, mo ke na kürü gô</string>
 
 
-
     <string name="send">Send Message</string>
     <string name="sendOtherApp">Send Message to other apps</string>
     <string name="hint">Enter a message</string>
     <string name="chooser">Send message via...</string>
+
+
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="reset">Reset</string>
 </resources>
